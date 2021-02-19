@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitoring Process Service
+
+[Service]
+EnvironmentFile=/etc/monitoring-process/.argconf
+ExecStart=/bin/bash /usr/bin/monitoring-process $_sleepTime
+
+[Install]
+WantedBy=multi-user.target
