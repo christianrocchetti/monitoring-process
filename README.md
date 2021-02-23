@@ -4,7 +4,7 @@ It is a simple service that logs the process with the most cpu consumption.
 
 ### Install service
 
-Give the script execute permission and run it with root permissions:
+Give the script execute permissions and run it with root permissions:
 
 ```shell
 chmod +x installer.sh 
@@ -15,7 +15,7 @@ sudo ./installer.sh
 
 ### Unistall
 
-Give the script execute permission and run it with root permissions:
+Give the script execute permissions and run it with root permissions:
 
 ```shell
 chmod +x uninstaller.sh
@@ -26,7 +26,7 @@ sudo ./uninstaller.sh
 
 ### Change setting
 
-For change the seconds time tracking edit `/etc/monitoring-process/.argconf`.
+For change the seconds time tracking, edit `/etc/monitoring-process/.argconf`.
 
 Parameters:
 
