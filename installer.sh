@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo cp monitoring-process.service /etc/systemd/system/
 sudo cp monitoring-process /usr/bin/
 

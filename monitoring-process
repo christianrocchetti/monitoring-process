@@ -1,17 +1,15 @@
 #!/bin/bash
 
-
 monitoringProcess() {
     local _sleepTime=$1
-    while true
-    do
+    while true; do
         local _date=$(date +%T\ %-d-%m-%Y)
         local _process=$(top -bn 1 | awk 'NR==8')
-        echo $_date$_process >> /var/log/monitoring-process/logs.log
-        sleep $_sleepTime
+        echo "$_date$_process" >>/var/log/monitoring-process/logs.log
+        sleep "$_sleepTime"
     done
 }
 
-
 _sleepTime=$1
 monitoringProcess $_sleepTime
+
